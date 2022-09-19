@@ -1,12 +1,11 @@
 # DropCov
 Implementation of DropCov as described in DropCov: A Simple yet Effective Method for Improving Deep Architectures by  Qilong Wang, Mingze Gao, Zhaolin Zhang, Jiangtao Xie, Peihua Li, Qinghua Hu
-<<<<<<< HEAD
 
 # Requirements
 
 
 # Main Results on ImageNet with Pretrained Models
-
+it 
 
 | name               | acc@1 | #params | FLOPs | url                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
@@ -90,6 +89,4 @@ python -m torch.distributed.launch --nproc_per_node <num-of-gpus-to-use> --use_e
 
 # Acknowledgement
 
-=======
-a
->>>>>>> e999273de2df91a7106c3e8ac5938eae96d8baf3
+
