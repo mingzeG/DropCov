@@ -49,10 +49,10 @@ To evaluate a pre-trained model on ImageNet val with a single GPU run:
 python main.py --eval --resume <checkpoint> --model <model-name>--data-path <imagenet-path> 
 ```
 
-For example, to evaluate the SPACH-Hybrid-MS-S model, run
+For example, to evaluate the Dropcov method, run
 
 ```bash
-python main.py --eval --resume --model spach_ms_s_patch4_224_hybrid spach_ms_hybrid_s.pth --data-path <imagenet-path>
+python main.py --eval --resume --model .pth --data-path <imagenet-path>
 ```
 
 giving
