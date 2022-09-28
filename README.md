@@ -46,18 +46,18 @@ and the training and validation data is expected to be in the `train/` folder an
 To evaluate a pre-trained model on ImageNet val with a single GPU run:
 
 ```bash
-python main.py --e --resume <checkpoint> --a <model-name>--data-path <imagenet-path> 
+CUDA_VISIBLE_DEVICES={device_ids}  python  -u main.py  -e -a {model_name} --resume {checkpoint-path} {imagenet-path}
 ```
 
 For example, to evaluate the Dropcov method, run
 
 ```bash
-python main.py --eval --resume --model .pth --data-path <imagenet-path>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -e -a resnet18_ACD --resume ./r18_64_acd_best.pth.tar ./dataset/ILSVRC2012
 ```
 
 giving
 ```bash
-* Acc@1 Acc@5 loss
+* Acc@1 73.5 Acc@5 91.2
 ```
 
 You can find all supported models in `models/registry.py.`
@@ -69,19 +69,19 @@ You can find all supported models in `models/registry.py.`
 You can run the `main.py` to train or evaluate as follow:
 
 ```
-CUDA_VISIBLE_DEVICES={device_ids} python main -a {model_name} --epochs {epoch_num} --b {batch_size} --lr_mode {the schedule of learning rate decline} {imagenet-path}
+CUDA_VISIBLE_DEVICES={device_ids} python -u main.py -a {model_name} --epochs {epoch_num} --b {batch_size} --lr_mode {the schedule of learning rate decline} {imagenet-path}
 ```
 For example:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --b 256 --lr_mode LRnorm  /home/ssd3/gaomingze01/dataset/ILSVRC2012 
+CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --b 256 --lr_mode LRnorm  ./dataset/ILSVRC2012
 ```
 
 # Citation
 
 ```
 @article{,
-  title={},
+  title={A Simple yet Effective Method for Improving Deep Architectures},
   journal={arXiv preprint arXiv:},
   year={2022}
 }
