@@ -46,7 +46,7 @@ and the training and validation data is expected to be in the `train/` folder an
 To evaluate a pre-trained model on ImageNet val with a single GPU run:
 
 ```bash
-python main.py --eval --resume <checkpoint> --model <model-name>--data-path <imagenet-path> 
+python main.py --e --resume <checkpoint> --a <model-name>--data-path <imagenet-path> 
 ```
 
 For example, to evaluate the Dropcov method, run
@@ -64,14 +64,17 @@ You can find all supported models in `models/registry.py.`
 
 ## Training
 
-One can simply call the following script to run training process. Distributed training is recommended even on single GPU node. 
+#### Train with ResNet
+
+You can run the `main.py` to train or evaluate as follow:
+
+```
+CUDA_VISIBLE_DEVICES={device_ids} python main -a {model_name} --epochs {epoch_num} --b {batch_size} --lr_mode {the schedule of learning rate decline} {imagenet-path}
+```
+For example:
 
 ```bash
-python -m torch.distributed.launch --nproc_per_node <num-of-gpus-to-use> --use_env main.py \
---model <model-name>
---data-path <imagenet-path>
---output_dir <output-path>
---dist-eval
+CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --b 256 --lr_mode LRnorm  /home/ssd3/gaomingze01/dataset/ILSVRC2012 
 ```
 
 # Citation
