@@ -60,8 +60,6 @@ giving
 * Acc@1 73.5 Acc@5 91.2
 ```
 
-You can find all supported models in `models/registry.py.`
-
 ## Training
 
 #### Train with ResNet
