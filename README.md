@@ -45,7 +45,7 @@ and the training and validation data is expected to be in the `train/` folder an
 
 ## Evaluation
 
-To evaluate a pre-trained model on ImageNet val with a single GPU run:
+To evaluate a pre-trained model on ImageNet val with GPUs run:
 
 ```bash
 CUDA_VISIBLE_DEVICES={device_ids}  python  -u main.py  -e -a {model_name} --resume {checkpoint-path} {imagenet-path}
@@ -66,7 +66,7 @@ giving
 
 #### Train with ResNet
 
-You can run the `main.py` to train or evaluate as follow:
+You can run the `main.py` to train as follow:
 
 ```
 CUDA_VISIBLE_DEVICES={device_ids} python -u main.py -a {model_name} --epochs {epoch_num} --b {batch_size} --lr_mode {the schedule of learning rate decline} {imagenet-path}
