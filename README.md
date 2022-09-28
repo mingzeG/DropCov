@@ -1,6 +1,8 @@
 # DropCov
 Implementation of DropCov as described in DropCov: A Simple yet Effective Method for Improving Deep Architectures by  Qilong Wang, Mingze Gao, Zhaolin Zhang, Jiangtao Xie, Peihua Li, Qinghua Hu
 
+![Poster](figures/method.png)
+
 # Requirements
 
 
@@ -43,42 +45,43 @@ and the training and validation data is expected to be in the `train/` folder an
 
 ## Evaluation
 
-To evaluate a pre-trained model on ImageNet val with a single GPU run:
+To evaluate a pre-trained model on ImageNet val with GPUs run:
 
 ```bash
-python main.py --eval --resume <checkpoint> --model <model-name>--data-path <imagenet-path> 
+CUDA_VISIBLE_DEVICES={device_ids}  python  -u main.py  -e -a {model_name} --resume {checkpoint-path} {imagenet-path}
 ```
 
 For example, to evaluate the Dropcov method, run
 
 ```bash
-python main.py --eval --resume --model .pth --data-path <imagenet-path>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -e -a resnet18_ACD --resume ./r18_64_acd_best.pth.tar ./dataset/ILSVRC2012
 ```
 
 giving
 ```bash
-* Acc@1 Acc@5 loss
+* Acc@1 73.5 Acc@5 91.2
 ```
-
-You can find all supported models in `models/registry.py.`
 
 ## Training
 
-One can simply call the following script to run training process. Distributed training is recommended even on single GPU node. 
+#### Train with ResNet
+
+You can run the `main.py` to train as follow:
+
+```
+CUDA_VISIBLE_DEVICES={device_ids} python -u main.py -a {model_name} --epochs {epoch_num} --b {batch_size} --lr_mode {the schedule of learning rate decline} {imagenet-path}
+```
+For example:
 
 ```bash
-python -m torch.distributed.launch --nproc_per_node <num-of-gpus-to-use> --use_env main.py \
---model <model-name>
---data-path <imagenet-path>
---output_dir <output-path>
---dist-eval
+CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --b 256 --lr_mode LRnorm  ./dataset/ILSVRC2012
 ```
 
 # Citation
 
 ```
 @article{,
-  title={},
+  title={A Simple yet Effective Method for Improving Deep Architectures},
   journal={arXiv preprint arXiv:},
   year={2022}
 }
