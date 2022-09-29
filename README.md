@@ -7,11 +7,10 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 
 
 # Main Results on ImageNet with Pretrained Models
-it 
+
 
 |Method           | acc@1(%) | #params.(M) | FLOPs(G) | url                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
-|     |   | M     | G  | [github](https://github.com/.pth) |
 | ResNet-34   |  74.19 |  21.8   |  3.66   |               |
 | ResNet-50   |  76.02 |  25.6   |   3.86  |               |
 | ResNet-101   |  77.67 |    44.6 | 7.57    |               |
