@@ -9,10 +9,21 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 # Main Results on ImageNet with Pretrained Models
 it 
 
-| name               | acc@1 | #params | FLOPs | url                                                          |
+|Method           | acc@1(%) | #params.(M) | FLOPs(G) | url                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
 |     |   | M     | G  | [github](https://github.com/.pth) |
-
+| ResNet-34   |  74.19 |  21.8   |  3.66   |               |
+| ResNet-50   |  76.02 |  25.6   |   3.86  |               |
+| ResNet-101   |  77.67 |    44.6 | 7.57    |               |
+| ResNet-34+DropCov(Ours)   | 76.81  |  29.6   | 5.56    |               |
+| ResNet-50+DropCov(Ours)   | 78.19  |   32.0  |  6.19   |               |
+| ResNet-101+DropCov(Ours)    |  79.51 |    51.0 |   9.90  |               |
+| DeiT-S   |  79.8 |  22.1   |   4.6  |               |
+| Swin-T   |  81.2 |   28.3  |     4.5|               |
+| T2T-ViT-14   |  81.5 |    21.5 |   5.2  |               |
+| DeiT-S+DropCov(Ours)   | 82.2  |   25.5  |     |               |
+| Swin-T-S+DropCov(Ours)  |  82.5 |   31.6  |   6.0  |               |
+| T2T-ViT-14-S+DropCov(Ours)   | 82.7  |  24.9   |    5.4 |               |
 # Usage
 
 ## Install
