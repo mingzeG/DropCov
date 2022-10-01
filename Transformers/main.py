@@ -11,7 +11,7 @@ import logging
 from collections import OrderedDict
 from contextlib import suppress
 from datetime import datetime
-import sot_src
+import src
 from thop import profile
 
 import torch
