@@ -3,9 +3,6 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 
 ![Poster](figures/method.png)
 
-# Requirements
-
-
 # Main Results on ImageNet with Pretrained Models
 
 
