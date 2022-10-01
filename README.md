@@ -94,9 +94,13 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --
 }
 ```
 
-# Contributing
-
-
 # Acknowledgement
+
+
+Our code are built following 
+[GCP_Optimization](https://github.com/ZhangLi-CS/GCP_Optimization),
+[DeiT](https://github.com/facebookresearch/deit),
+[Swin Transformer](https://github.com/microsoft/Swin-Transformer)
+, thanks for their excellent work
 
 
