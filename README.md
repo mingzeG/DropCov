@@ -92,9 +92,8 @@ python -m torch.distributed.launch --nproc_per_node 8 --master_port 12345  main.
 #### Train with Deit and T2T
 `Deit-S`:
 ```bash
-sh ./scripts/
+sh ./scripts/train_Deit_drop_Small.sh
 ```
-sh ./scripts
 # Citation
 
 ```
