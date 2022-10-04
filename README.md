@@ -6,20 +6,20 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 # Main Results on ImageNet with Pretrained Models
 
 
-|Method           | acc@1(%) | #params.(M) | FLOPs(G) | url                                                          |
+|Method           | Acc@1(%) | #Params.(M) | FLOPs(G) | Checkpoint                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
-| ResNet-34   |  74.19 |  21.8   |  3.66   |               |
+| ResNet-34   |  74.19 |  21.8   |  3.66   ||
 | ResNet-50   |  76.02 |  25.6   |   3.86  |               |
 | ResNet-101   |  77.67 |    44.6 | 7.57    |               |
-| ResNet-34+DropCov(Ours)   | 76.81  |  29.6   | 5.56    |               |
-| ResNet-50+DropCov(Ours)   | 78.19  |   32.0  |  6.19   |               |
-| ResNet-101+DropCov(Ours)    |  79.51 |    51.0 |   9.90  |               |
+| ResNet-34+DropCov(Ours)   | 76.81  |  29.6   | 5.56    | [Download](https://drive.google.com/file/d/1rAK-u85tYxhodTDBV_QuIjXFlxz7Ul2t/view?usp=sharing)|
+| ResNet-50+DropCov(Ours)   | 78.19  |   32.0  |  6.19   |[Download](https://drive.google.com/file/d/1235CUjS7va_h6weWQeAwFZ_J1iOqmaDm/view?usp=sharing)|
+| ResNet-101+DropCov(Ours)    |  79.51 |    51.0 |   9.90  |[Download](https://drive.google.com/file/d/1KJyAUXu11GFz6uLS1kGyZc1JM-pi-E37/view?usp=sharing)|
 | DeiT-S   |  79.8 |  22.1   |   4.6  |               |
 | Swin-T   |  81.2 |   28.3  |     4.5|               |
 | T2T-ViT-14   |  81.5 |    21.5 |   5.2  |               |
-| DeiT-S+DropCov(Ours)   | 82.2  |   25.5  |     |               |
-| Swin-T-S+DropCov(Ours)  |  82.5 |   31.6  |   6.0  |               |
-| T2T-ViT-14-S+DropCov(Ours)   | 82.7  |  24.9   |    5.4 |               |
+| DeiT-S+DropCov(Ours)   | 82.2  |   25.5  |     |[Download](https://drive.google.com/file/d/1Ziw9dRvainxIQlq_9htZ58inr6nRsPmx/view?usp=sharing)|
+| Swin-T-S+DropCov(Ours)  |  82.5 |   31.6  |   6.0  |[Download](https://drive.google.com/file/d/1w4gyTBJ9b_Rg9xj9bjA__yJ7GECMMtqM/view?usp=sharing)|
+| T2T-ViT-14-S+DropCov(Ours)   | 82.7  |  24.9   |    5.4 |[Download](https://drive.google.com/file/d/1KQmJ7cZjDPy4WOmOGAPGr9wbBWaQGNPo/view?usp=sharing)|
 # Usage
 
 ## Install
