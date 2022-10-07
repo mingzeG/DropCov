@@ -17,7 +17,7 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 | DeiT-S   |  79.8 |  22.1   |   4.6  |               |
 | Swin-T   |  81.2 |   28.3  |     4.5|               |
 | T2T-ViT-14   |  81.5 |    21.5 |   5.2  |               |
-| DeiT-S+DropCov(Ours)   | 82.2  |   25.5  |     |[Download](https://drive.google.com/file/d/1Ziw9dRvainxIQlq_9htZ58inr6nRsPmx/view?usp=sharing)|
+| DeiT-S+DropCov(Ours)   | 82.2  |   25.5  | 5.5    |[Download](https://drive.google.com/file/d/1Ziw9dRvainxIQlq_9htZ58inr6nRsPmx/view?usp=sharing)|
 | Swin-T-S+DropCov(Ours)  |  82.5 |   31.6  |   6.0  |[Download](https://drive.google.com/file/d/1w4gyTBJ9b_Rg9xj9bjA__yJ7GECMMtqM/view?usp=sharing)|
 | T2T-ViT-14-S+DropCov(Ours)   | 82.7  |  24.9   |    5.4 |[Download](https://drive.google.com/file/d/1KQmJ7cZjDPy4WOmOGAPGr9wbBWaQGNPo/view?usp=sharing)|
 # Usage
