@@ -1,5 +1,5 @@
 # DropCov
-Implementation of DropCov as described in DropCov: A Simple yet Effective Method for Improving Deep Architectures by  Qilong Wang, Mingze Gao, Zhaolin Zhang, Jiangtao Xie, Peihua Li, Qinghua Hu
+Implementation of DropCov as described in DropCov: A Simple yet Effective Method for Improving Deep Architectures. DropCov is a simple dropout-based method to replace the exsisting global corvariance pooling (GCP)'s post-normalization by excuting channel-dropout considering both representation decorrelation and information perservation.
 
 ![Poster](figures/method.png)
 
@@ -14,9 +14,9 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 | ResNet-34+DropCov(Ours)   | 76.81  |  29.6   | 5.56    | [Download](https://drive.google.com/file/d/1rAK-u85tYxhodTDBV_QuIjXFlxz7Ul2t/view?usp=sharing)|
 | ResNet-50+DropCov(Ours)   | 78.19  |   32.0  |  6.19   |[Download](https://drive.google.com/file/d/1235CUjS7va_h6weWQeAwFZ_J1iOqmaDm/view?usp=sharing)|
 | ResNet-101+DropCov(Ours)    |  79.51 |    51.0 |   9.90  |[Download](https://drive.google.com/file/d/1KJyAUXu11GFz6uLS1kGyZc1JM-pi-E37/view?usp=sharing)|
-| DeiT-S   |  79.8 |  22.1   |   4.6  |               |
-| Swin-T   |  81.2 |   28.3  |     4.5|               |
-| T2T-ViT-14   |  81.5 |    21.5 |   5.2  |               |
+| DeiT-S   |  79.8 |  22.1   |   4.6  |[Download](https://drive.google.com/file/d/1Tmz1YxfwLFUDZTovjb--pGgFMvZmXyDq/view?usp=sharing)|
+| Swin-T   |  81.2 |   28.3  |     4.5|[Download](https://drive.google.com/file/d/1vZgq0llSlV2H9lS95VbbM6QLtrzpp8Ut/view?usp=sharing) |
+| T2T-ViT-14   |  81.5 |    21.5 |   5.2  |[Download](https://drive.google.com/file/d/1b7vNbniADAJ_ZuLDOA0Zsx9iNqhMbqkJ/view?usp=sharing)|
 | DeiT-S+DropCov(Ours)   | 82.2  |   25.5  |     |[Download](https://drive.google.com/file/d/1Ziw9dRvainxIQlq_9htZ58inr6nRsPmx/view?usp=sharing)|
 | Swin-T-S+DropCov(Ours)  |  82.5 |   31.6  |   6.0  |[Download](https://drive.google.com/file/d/1w4gyTBJ9b_Rg9xj9bjA__yJ7GECMMtqM/view?usp=sharing)|
 | T2T-ViT-14-S+DropCov(Ours)   | 82.7  |  24.9   |    5.4 |[Download](https://drive.google.com/file/d/1KQmJ7cZjDPy4WOmOGAPGr9wbBWaQGNPo/view?usp=sharing)|
@@ -99,7 +99,7 @@ sh ./scripts/train_Deit_drop_Small.sh
 ```
 @article{,
   title={A Simple yet Effective Method for Improving Deep Architectures},
-  journal={arXiv preprint arXiv:},
+  paper={arXiv preprint arXiv:},
   year={2022}
 }
 ```
