@@ -14,6 +14,7 @@ Implementation of DropCov as described in DropCov: A Simple yet Effective Method
 | ResNet-34+DropCov(Ours)   | 76.81  |  29.6   | 5.56    | [Download](https://drive.google.com/file/d/1rAK-u85tYxhodTDBV_QuIjXFlxz7Ul2t/view?usp=sharing)|
 | ResNet-50+DropCov(Ours)   | 78.19  |   32.0  |  6.19   |[Download](https://drive.google.com/file/d/1235CUjS7va_h6weWQeAwFZ_J1iOqmaDm/view?usp=sharing)|
 | ResNet-101+DropCov(Ours)    |  79.51 |    51.0 |   9.90  |[Download](https://drive.google.com/file/d/1KJyAUXu11GFz6uLS1kGyZc1JM-pi-E37/view?usp=sharing)|
+<<<<<<< HEAD
 | DeiT-S   |  79.8 |  22.1   |   4.6  |[Download](https://drive.google.com/file/d/1Tmz1YxfwLFUDZTovjb--pGgFMvZmXyDq/view?usp=sharing)|
 | Swin-T   |  81.2 |   28.3  |     4.5|[Download](https://drive.google.com/file/d/1vZgq0llSlV2H9lS95VbbM6QLtrzpp8Ut/view?usp=sharing) |
 | T2T-ViT-14   |  81.5 |    21.5 |   5.2  |[Download](https://drive.google.com/file/d/1b7vNbniADAJ_ZuLDOA0Zsx9iNqhMbqkJ/view?usp=sharing)|
