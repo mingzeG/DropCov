@@ -100,7 +100,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --
 ```bash
 python -m torch.distributed.launch --nproc_per_node 8 --master_port 12345  main.py  --cfg configs/swin/swin_tiny_patch4_window7_224.yaml --data-path <imagenet-path> --batch-size 128 
 ```
-#### Train with Deit and T2T
+#### Train with Deit-S and T2T-ViT-14
 `Deit-S`:
 ```bash
 sh ./scripts/train_Deit_drop_Small.sh
