@@ -30,8 +30,8 @@ are crucial to alleviate over-fitting and increase representation ability of dee
 ### Environments
 ●OS：18.04  
 ●CUDA：11.0  
-●Toolkit：PyTorch 1.8.0  
-●GPU:GTX 3090Ti  
+●Toolkit：PyTorch 1.7\1.8
+●GPU:GTX 2080Ti\3090Ti  
 
 ### Install
 First, clone the repo and install requirements:
