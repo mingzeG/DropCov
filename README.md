@@ -1,6 +1,6 @@
 # DropCov
 Implementation of DropCov as described in DropCov: A Simple yet Effective Method for Improving Deep Architectures. DropCov is a simple dropout-based method to replace the exsisting global corvariance pooling (GCP)'s post-normalization by excuting channel-dropout considering both representation decorrelation and information perservation.
-
+#Introduction
 ![Poster](figures/method.png)
 
 # Main Results on ImageNet with Pretrained Models
