@@ -28,10 +28,10 @@ are crucial to alleviate over-fitting and increase representation ability of dee
 | T2T-ViT-14-S+DropCov(Ours)   | 82.7  |  24.9   |    5.4 |[Download](https://drive.google.com/file/d/1KQmJ7cZjDPy4WOmOGAPGr9wbBWaQGNPo/view?usp=sharing)|
 ## Usage
 ### Environments
-●OS：18.04
-●CUDA：11.0
-●Toolkit：PyTorch 1.7
-●GPU:GTX 3090Ti
+●OS：18.04  
+●CUDA：11.0  
+●Toolkit：PyTorch 1.7  
+●GPU:GTX 3090Ti  
 
 ### Install
 First, clone the repo and install requirements:
