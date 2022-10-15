@@ -106,7 +106,7 @@ sh ./scripts/train_Deit_drop_Small.sh
 ## Citation
 
 ```
-@inproceedings{,
+@inproceedings{wang2022nips,
   title={A Simple yet Effective Method for Improving Deep Architectures},
   author={Qilong Wang and Mingze Gao and Zhaolin Zhang and Jiangtao Xie and Peihua Li and Qinghua Hu},
   booktitle = {NeurIPS},
