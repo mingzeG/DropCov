@@ -5,7 +5,7 @@ This is an code implementation of NeurIPS2022 paper ([DropCov: A Simple yet Effe
 
 ## Introduction
 Post-normalization plays a key role in deep global covariance pooling (GCP) networks. In this paper, we for the first time show that effective post-normalization can make a good trade-off between representation decorrelation and information preservation for GCP, which are crucial to alleviate over-fitting and increase representation ability of deep GCP networks, respectively. Based on this finding, we propose a simple yet effective pre-normalization method for GCP (namely DropCov), which performs an adaptive channel dropout before GCP to achieve tradeoff between representation decorrelation and information preservation. The proposed DropCov improves performance of both deep CNNs and ViTs.
-![Poster](figures/overview.pdf)
+![Poster](figures/overview.jpg)
 
 ## Main Results on ImageNet with Pretrained Models
 
