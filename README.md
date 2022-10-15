@@ -92,7 +92,7 @@ For example:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --b 256 --lr_mode LRnorm  ./dataset/ILSVRC2012
 ```
-#### Train with Swin
+#### Train with Swin-T
 `Swin-T`:
 
 ```bash
